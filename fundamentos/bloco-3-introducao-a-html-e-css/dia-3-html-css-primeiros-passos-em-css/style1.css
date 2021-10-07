@@ -1,0 +1,17 @@
+h1, p {
+    text-align: center;
+}
+
+li:hover {
+    background-color: blue;
+}
+
+li:active {
+    color: white;
+    font-size: 50px;
+    transition-duration: 2s;
+}
+
+ol, ul {
+    list-style: none;
+}
