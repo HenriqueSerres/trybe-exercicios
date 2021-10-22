@@ -56,6 +56,14 @@
         */
        let txt = document.getElementsByTagName("p");
        txt[0].innerText = "Trabalhando com tecnologia";
+
+       let mainBox = document.getElementsByTagName("main");
+       function changeColor(color){
+       mainBox[0].style.backgroundColor = color;
+       }
+       changeColor('rgb(76,164,109)');
+       console.log(mainBox);
+
     </script>
   </body>
 </html>
