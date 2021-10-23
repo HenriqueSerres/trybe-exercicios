@@ -63,7 +63,53 @@
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
 
       let mainTag = document.body;
-      mainTag.className = 'main-content';
+      let master = document.createElement('main');
+      mainTag.appendChild(master);
+      master.className = 'main-content';
+
+      let sessaoTag = document.querySelector('main');
+      let sessao = document.createElement('section');
+      sessaoTag.appendChild(sessao);
+      sessao.className = 'center-content';
+
+      let textP = document.querySelector('section');
+      let text = document.createElement('p');      
+      textP.appendChild(text);
+      text.innerText = 'EU ESTOU APRENDENDO MUITO NESTAS AULAS';
+
+      let sessaoLeft = document.querySelector('main');
+      let left = document.createElement('section');
+      sessaoLeft.appendChild(left);
+      left.className = 'left-content';
+
+      let sessaoRight = document.querySelector('main');
+      let right = document.createElement('section');
+      sessaoRight.appendChild(right);
+      right.className = 'right-content';
+
+      let imageTag = document.querySelector('.left-content');     
+      let image = document.createElement('img');
+      image.src = "https://picsum.photos/200";
+      image.className = 'small-image';   
+      imageTag.appendChild(image);
+      
+      let listTag = document.querySelector('.right-content');
+      let list = document.createElement('ul');
+      listTag.appendChild(list);
+      let itensList = [0];
+      
+      for (let index = 0; index < 9; index += 1) {
+        if (index <= 9) {
+          itensList = document.createElement('li');   
+        }
+      }
+      console.log(itensList);     
+
+    
+      li.appendChild(itensList);
+
+      
+
     </script>
   </body>
 </html>
