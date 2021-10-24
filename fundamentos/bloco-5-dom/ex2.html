@@ -96,17 +96,17 @@
       let listTag = document.querySelector('.right-content');
       let list = document.createElement('ul');
       listTag.appendChild(list);
-      let itensList = [0];
-      
-      for (let index = 0; index < 9; index += 1) {
-        if (index <= 9) {
-          itensList = document.createElement('li');   
-        }
+      let arrayNumbers = ['um', 'dois', 'três', 'quatro','cinco','seis','sete','oito','nove','dez'];
+      let itensList = [' '];
+      for (let index = 0; index < arrayNumbers.length; index += 1) {        
+          itensList = document.createElement('li');    
+          itensList.innerHTML = arrayNumbers[index];
+          list.appendChild(itensList);       
       }
-      console.log(itensList);     
+          console.log(itensList);
 
     
-      li.appendChild(itensList);
+      //list.appendChild(itensList);
 
       
 
