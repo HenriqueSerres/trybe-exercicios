@@ -11,3 +11,5 @@ function creatStateOptions(){
   }
 }
 creatStateOptions();
+
+document.getElementById('start-date').DatePickerX.init();
